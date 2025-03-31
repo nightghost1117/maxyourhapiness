@@ -23,9 +23,11 @@
   <!-- Hero section Start -->
   <section class="hero-1 bg-primary ">
     <!-- bg-overlay-img -->
-    <!-- <div class="bg-overlay overflow-hidden bg-transparent">
-      <div class="hero-1-bg"></div>
-    </div> -->
+    <div class="bg-overlay overflow-hidden bg-transparent">
+      <div class="hero-1-bg">
+        <img class="hero-1-bg" src="images/newpic.webp" alt="newpic" class="img-fluid" />
+      </div>
+    </div>
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-9">
@@ -929,23 +931,6 @@
     </div>
     <!-- end container -->
   </section>
-  <script>
-    const images = ['url("images/newpic.webp")'];
-    let currentSlide = 0;
-    const heroBg = document.querySelector(".hero-1 .hero-1-bg");
-
-    function showSlide(index) {
-      heroBg.style.backgroundImage = images[index];
-    }
-
-    function nextSlide() {
-      currentSlide = (currentSlide + 1) % images.length;
-      showSlide(currentSlide);
-    }
-
-    showSlide(currentSlide);
-    setInterval(nextSlide, 6000);
-  </script>
   <!-- unicons -->
   <script src="https://unicons.iconscout.com/release/v2.1.11/script/monochrome/bundle.js" defer></script>
 
